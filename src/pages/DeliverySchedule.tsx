@@ -2,6 +2,7 @@ import React from 'react';
 import { Truck, Calendar, Clock, MapPin } from 'lucide-react';
 import ZipCodeChecker from '@/components/ZipCodeChecker';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Header from '@/components/Header';
@@ -84,11 +85,8 @@ const DeliverySchedule = () => {
                   <p className="text-muted-foreground mb-4">
                     Need specific delivery information for your area?
                   </p>
-                  <Button 
-                    className="bg-primary hover:bg-primary/90"
-                    onClick={() => window.location.href = '/contact'}
-                  >
-                    Contact Us Today
+                  <Button asChild className="bg-white text-primary hover:bg-blue-50 font-semibold py-3 px-6 md:px-8 text-sm md:text-base">
+                    <Link to="/contact">Contact Us Today</Link>
                   </Button>
                 </div>
               </CardContent>

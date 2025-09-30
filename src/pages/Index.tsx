@@ -149,13 +149,11 @@ const Index = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button 
-                    variant="outline" 
-                    className="w-full"
-                    onClick={() => window.location.href = '/contact'}
-                  >
-                    Contact Us to Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                
+                  <Button asChild className="bg-white text-primary hover:bg-blue-50 font-semibold py-3 px-6 md:px-8 text-sm md:text-base">
+                    <Link to="/contact">Contact Us to Learn More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>
