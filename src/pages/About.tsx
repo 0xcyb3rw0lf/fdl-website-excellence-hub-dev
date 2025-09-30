@@ -1,8 +1,8 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 import { 
   Users, 
   Award, 
@@ -100,8 +100,8 @@ const About = () => {
                 trusted partner for comprehensive 3PL logistics solutions since 1999.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                <Button className="bg-white text-primary hover:bg-blue-50 font-semibold py-3 px-6 md:px-8 text-sm md:text-base" onClick={() => window.location.href = '/contact'}>
-                  Contact Us
+                <Button asChild className="bg-white text-primary hover:bg-blue-50 font-semibold py-3 px-6 md:px-8 text-sm md:text-base">
+                  <Link to="/contact">Contact Us</Link>
                 </Button>
               </div>
             </div>
@@ -200,8 +200,8 @@ const About = () => {
             Whether you need warehousing, fulfillment, transportation, or complete supply chain management, 
             we're here to optimize your operations and drive efficiency.
           </p>
-          <Button className="bg-white text-primary hover:bg-blue-50 font-semibold py-3 px-6 md:px-8 text-sm md:text-base" onClick={() => window.location.href = '/contact'}>
-            Contact Us
+          <Button asChild className="bg-white text-primary hover:bg-blue-50 font-semibold py-3 px-6 md:px-8 text-sm md:text-base">
+            <Link to="/contact">Contact Us</Link>
           </Button>
         </div>
       </section>
